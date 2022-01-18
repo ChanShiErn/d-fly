@@ -32,9 +32,9 @@ st.set_page_config(page_title = "D-FLY",
 
 
 #read & display dataset into streamlit
-delay_data = load_dataset("C:/Users/SHI ERN/Documents/UM/sem5/project/2018_flight_delays.csv")
-model_delay_data = pd.read_csv("C:/Users/SHI ERN/Documents/UM/sem5/project/model_training_result.csv")
-date_location_carrier = pd.read_csv("C:/Users/SHI ERN/Documents/UM/sem5/project/flight_date_carrier_location.csv")
+delay_data = load_dataset("./2018_flight_delays.csv")
+model_delay_data = pd.read_csv("./model_training_result.csv")
+date_location_carrier = pd.read_csv(./flight_date_carrier_location.csv")
     
 #create a side bar to choose home page, dataset page or evaluation page
 pageselection = st.sidebar.selectbox("Please choose action:", ["Home", "Dataset", "Evaluation"])
