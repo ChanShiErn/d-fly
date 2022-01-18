@@ -54,7 +54,7 @@ if pageselection == "Home":
     col1, col2, col3 = st.columns([2,4,5]) 
     with col1:
         st.markdown("**About Author**")
-        image = Image.open('C:/Users/SHI ERN/Pictures/cse.jpg')
+        image = Image.open('./cse.jpg')
         st.image(image)
         
     with col2:
